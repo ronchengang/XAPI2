@@ -396,7 +396,7 @@ double iniGetDouble(const char *section, const char *key, double defvalue)
 	char valstr[64];
 
 	if (iniGetString(section, key, valstr, sizeof(valstr), ""))
-	    return (int)atof(valstr);
+	    return (double)atof(valstr);
 	return defvalue;
 }
 
